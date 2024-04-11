@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang web của tôi</title>
+  </head>
+<body>
+    <header>
+        <a href="#">&lt;</a>
+        <p>Home</p>
+        <p class="changeColor">|</p>
+        <p class="changeColor">My rewards</p>
+    </header>
+    <main>
+        <h1 style="margin-left: 50px;">My Rewards</h1>
+        <div class="first">
+            <p>Summary</p>
+            <p>About TripGuide Rewards</p>
+        </div>
+        <div class="line"></div>
+        <div class="second">
+            <div id="line1">
+                <div>
+                    <h2>Elite Status</h2>
+                    <p>Point Earned in 2020</p>
+                </div>
+                <div class="text1" style="background-color: white; padding-top: 15px;">
+                    <p>18.592</p>
+                    <p>(worth) 37.98123$</p>
+                </div>
+            </div>
+            <p class="middle">25. $ is the minimum rewards claim at a time</p>
+            <div id="line2">
+                <div class="text2" style="background-color: #4a00eb;">
+                    <p>Total Points</p>
+                    <p>Pending</p>
+                    <p>0</p>
+                </div>
+                <div class="text2" style="background-color: #ff8a49;">
+                    <p>Something went wrong</p>
+                    <p>Around</p>
+                    <p>10000</p>
+                </div>
+                <div class="text2" style="background-color: #00d17a;">
+                    <p>Date of line</p>
+                    <p>Dec, 31, 2018</p>
+                    <p>0</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+<style>
+    header{
+        display: flex;
+        align-items: center;
+        font-size: 12px;
+        margin-left: 50px;
+    }
+    header p{
+        margin-left: 50px;
+    }
+    .line {
+        width: 90%; /* Adjust width as needed */
+        height: 1px; /* Adjust thickness as needed */
+        background-color:#ce8080; /* Adjust color as needed */
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .changeColor{
+        color: #ce8080;
+    }
+    .first{
+        display: flex;
+        margin-left: 50px;
+    }
+    .first p{
+        margin-right: 30px;
+    }
+    .second{
+        background-color: white;
+        margin-left: 50px;
+        border-radius: 20px;
+        margin-right: 100px;
+        padding-bottom: 50px;
+    }
+    body{
+        background-color: #f2f2f2;
+    }
+    #line1, #line2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .text2,.text1{
+        border-radius: 10px;
+    }
+    #line1,#line2,.text2,.text1,p{
+        text-align: center;
+    }
+    .text1{
+        margin-left: 50px;
+        padding: 30px;
+    }
+    .text2{
+        margin-right: 50px;
+        color: white;
+        padding: 10px 30px;
+    }
+    .middle{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+</style>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang web của tôi</title>
+  </head>
+<body>
+    <h1 style="text-align: center;">Tuyển dụng</h1>
+    <div class="formRecruitment">
+        <form action="">
+            <label for="name">Họ và tên</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <label for="tel">Số điện thoại</label>
+            <input type="tel" id="tel" name="tel">
+            <label for="cv">CV</label>
+            <div>
+                <button>Choose File</button>
+                <label for="cv">No file chosen</label>
+            </div>
+            <label for="message">Tin nhắn</label>
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+            <button class="sent">Gửi</button>
+        </form>
+    </div>
+</body>
+
+<style>
+   form{
+    margin: 20px;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+   }
+   .sent{
+    background-color: black;
+    color: white;
+    width: 50px;
+    height: 50px;
+   }
+   label, input, textarea,div{
+    margin-bottom: 10px;
+   }
+   .formRecruitment{
+        margin-left: 30%;
+        margin-right: 30%;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+   }
+</style>
+</html>
